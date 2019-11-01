@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^controller/([a-z0-9-]+)/([a-z0-9-]+)?$ controller.php?model=$1&action=$2 [NC,L]
+</IfModule>
